@@ -1,6 +1,7 @@
-//Jair Gonzalez
+//Jair Emmanuel Gonzalez
 //Circulo cromatico
-//22/04/2021
+//10/05/2021
+//legajo 88527/5
 
 //fondo
 void settings() {
