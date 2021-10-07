@@ -1,7 +1,8 @@
-//tp4 aventura grafica
+//tp4 aventura grafica, recuperatorio
 //jair gonzalez 
 //Legajo (88527/5)
 //Link al video: https://youtu.be/XewSKdQcKHc
+//Link video del recuperatorio, explicando agregando imagenes: https://youtu.be/6qTeiH9l9gE
 
 int pantalla = 0;
 String [] textos;
@@ -13,14 +14,13 @@ int b = 0;
 
 void setup() {
   size(600, 600);
+  //array para imagenes
   textos = loadStrings("data/textos.txt");  
   for (int i = 0; i < images.length; i++) {
     images[i] = loadImage("fondo_"+ i + ".jpg");
+    //ponerle de nombre fondoX.jpg
   }
 }
-//para cargar en los if 
-//los nombres tienen que ser fondosX.jpg
-
 
 void draw() {
   if (pantalla==0) {
@@ -153,10 +153,9 @@ void draw() {
     TextoDeCrediros(300, 25, "Alumno: Jair Gonzalez (88527/5)");
     TextoDeCrediros(450, 15, "Historia Original");
     TextoDeCrediros(480, 12, "Las imagenes fueron recolectadas de distintas fuentes");
-    
     BotonRect(width-150, height-50, 120, 40, 30, "Volver", 3);
   }
   //ver que pantalla estoy
-  fill(255, 0, 0);
-  text(pantalla, 25, 25);
+  //fill(255, 0, 0);
+  //text(pantalla, 25, 25);
 }
