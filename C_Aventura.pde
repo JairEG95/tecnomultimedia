@@ -399,4 +399,10 @@ class Aventura {
     text(texto, width/2, y1_);
     popStyle();
   }
+  void teclapresionada2() {
+    juego.teclapresionada();
+  }
+  void teclasoltada2() {
+    juego.teclasoltada();
+  }
 }

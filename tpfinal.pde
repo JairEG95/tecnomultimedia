@@ -1,8 +1,8 @@
 //tp final
 //jair gonzalez
+//link al video
 
 Aventura aventura;
-Player p;
 
 void setup() {
   size(600, 600);
@@ -15,8 +15,8 @@ void mousePressed() {
   aventura.click();
 }
 void keyPressed() {
-  p.setMove(keyCode, true);
+  aventura.teclapresionada2();
 }
 void keyReleased() {
-  p.setMove(keyCode, false);
+  aventura.teclasoltada2();
 }

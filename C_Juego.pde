@@ -2,6 +2,7 @@
 class Juego {
   Fondo fondo;
   Enemigo[] enemigo;
+  Player p;
   int cantEnemigos;
   int puntos = 0;
   int tempo = 0;
@@ -21,7 +22,7 @@ class Juego {
     //fondo
     fondo = new Fondo();
   }
-  
+
   void game_() {
     jugando_();
     tempo();
@@ -93,5 +94,11 @@ class Juego {
     }
     popStyle();
     popMatrix();
+  }
+  void teclapresionada() {
+    p.setMove(keyCode, true);
+  }
+  void teclasoltada() {
+    p.setMove(keyCode, false);
   }
 }
