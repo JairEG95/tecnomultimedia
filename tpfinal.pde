@@ -1,6 +1,7 @@
 //tp final
 //jair gonzalez
-//link al video
+//Legajo (88527/5)
+//link al video https://youtu.be/z4Zqhhgx0RQ
 
 Aventura aventura;
 

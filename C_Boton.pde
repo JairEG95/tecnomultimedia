@@ -3,6 +3,7 @@ class Boton {
   //popiedades de la clase
   float x, y, ancho, alto, tama;
   String label;
+  
   //constructor:
   Boton(String label_, float x_, float y_, float ancho_, float alto_, float tama_) {
     x = x_;
@@ -12,6 +13,7 @@ class Boton {
     alto = alto_;
     tama = tama_;
   }
+  
   //funciones
   void actualizar() {
     dibujar();

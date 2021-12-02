@@ -1,15 +1,24 @@
-//fondo en movimiento
+//fondos de la aventuras fijos
 class Fondo {
-  PImage imgFondo;
+  int numFondo;
+  int maximosfondos = 8;
+  PImage[] images = new PImage[maximosfondos];
   float y;
   float velY;
+  float altura;
+
   Fondo() {
-    imgFondo = loadImage("fondo2.jpg");
+    for (int i = 0; i <images.length; i++) {
+      images[i] = loadImage("fondo"+ i + ".jpg");
+    }
     y = 0;
-    velY = -2;
   }
-  void draw_() {
-    image(imgFondo, 0, y, 600, 7000);
+
+  void dibujar(int numFondo_, float velY_, float altura_) {
+    numFondo = numFondo_;
+    velY = velY_;
+    altura = altura_;
+    image(images[numFondo], 0, y, width, altura);
     y+=velY;
     if (y==-6400) {
       y = 0;
