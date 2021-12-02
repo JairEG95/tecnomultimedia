@@ -4,7 +4,6 @@ class Enemigo {
   float despX, despY;
   int contador;
   PImage imgPez1;
-  
   Enemigo() {
     x = random(50, width-50);
     y = random(50, height-50);
@@ -16,7 +15,6 @@ class Enemigo {
     ubicacionrandom();
     imgPez1 = loadImage("pez1.png");
   }
-  
   void draw_() {
     pushMatrix();
     pushStyle();
